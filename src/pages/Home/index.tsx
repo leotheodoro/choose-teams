@@ -34,7 +34,7 @@ const Home: React.FC = () => {
   const handleAddPlayer = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      if (players.length < 10) {
+      if (players.length < 10 && newPlayer.name !== '') {
         setPlayers([...players, newPlayer]);
       }
 
