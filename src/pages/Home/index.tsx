@@ -9,7 +9,10 @@ import {
   Player,
   Teams,
   SortTeams,
+  Image,
 } from './styles';
+
+import logoImg from '../../assets/logo.jpg';
 
 interface Player {
   id: string;
@@ -142,6 +145,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Image src={logoImg} alt="Logo Leonardo dando bala no ale" height={200} />
       <HeaderTitle>Gerando o time pro mix</HeaderTitle>
       <Form onSubmit={handleAddPlayer}>
         <input

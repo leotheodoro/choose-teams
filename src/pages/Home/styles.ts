@@ -128,3 +128,9 @@ export const SortTeams = styled.button`
     background-color: ${shade(0.2, '#2574a9')};
   }
 `;
+
+export const Image = styled.img`
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 10px;
+`;
