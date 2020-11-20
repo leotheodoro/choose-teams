@@ -13,6 +13,19 @@ export default createGlobalStyle`
     font-size: 16px;
   }
 
+  /* dark mode */
+  
+  html {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #fff;
+  }
+
+  img, picture, video {
+    filter: invert(1) hue-rotate(180deg)
+  }
+
+  /* dark mode */
+
   button {
     cursor: pointer;
   }
@@ -20,6 +33,10 @@ export default createGlobalStyle`
   #root {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 80px 40px;
+    padding: 20px 40px;
+
+    @media screen and (min-width:768px) {
+      padding: 80px 40px;
+    }
   }
 `;

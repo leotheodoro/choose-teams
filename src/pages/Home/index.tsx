@@ -189,7 +189,7 @@ const Home: React.FC = () => {
             <Team>
               <Title>
                 {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-                Time 1 <LevelBadge>{secondAverage}</LevelBadge>
+                Time 2 <LevelBadge>{secondAverage}</LevelBadge>
               </Title>
               {secondTeam.map(player => (
                 <Player key={player.id}>
